@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --mgn:1.5rem;
+    --pdn:1.5rem;
+    --fontMid:2rem;
+    --fontLarge:3rem;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(icepack.jpg);
+    background-size: cover;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:15rem;
+    background-color: rgba(72, 70, 70, 0.4);
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+
+
+    
+}
+.input-box{
+    display: flex;
+    width:50rem;
+    /* background-color:rgb(186, 182, 182,.7); */
+    margin: var(--mgn);
+    justify-content: space-between;
+        
+
+}
+.text{
+    flex-grow: 1;
+    padding: var(--pdn);
+    margin:var(--mgn);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    
+}
+.btn{
+    padding: var(--pdn);
+    margin:var(--mgn);
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color:rgb(38, 123, 227);
+}
+.showlist{
+    display: flex;
+    width:47rem;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding: var(--pdn);
+    flex-direction: column;
+    gap:10px
+
+
+}
+.showlist div{
+    width: 37.5rem;
+    height: 3rem;
+    background-color:transparent;
+    border: none;
+    padding: 1rem;
+    border-radius:0.8rem;
+    position: relative;
+    font-size: 1.3rem;
+    color:rgb(0, 255, 38);
+    font-weight: 700;
+    
+    
+}
+
+.showlist div::before{
+    content: "";
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background-image: url(unchceked.png);
+    background-size: cover;
+    top:11px;
+    left:-42px;
+    cursor: pointer;
+    
+}
+.showlist .checked{
+    color:rgb(46, 40, 40);
+    border-radius: 0.8rem;
+    
+}
+.showlist .checked::before{
+    background-image: url(checked.png);
+    background-size: cover;
+}
+.showlist .kata{
+    position: relative;
+    top:-24px;
+    left:541px;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.showlist .kata:hover{
+    background-color: black;
+    color:white;
+}
+.closebutton{
+    height: 40px;
+    width: 100px;
+    background-color:rgb(12, 134, 179) ;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
